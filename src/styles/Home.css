@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__codice {
+    position: absolute;
+    height: 236px;
+left: 20.21%;
+right: 21.46%;
+color: #F7F6F3;
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 118px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__almanaque {
+position: absolute;
+color: #F7F6F3;
+top: 95%;
+right: 25%;
+bottom: 1%;
+  font-family: Raleway, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.venusimg {
+  width: 100%;
+  position: relative;
+
+}
+
+.home__content_introtext{
+background-color: orange;
+color: #ffffff;
+font-size:2em;
+}
+
+.venusimg__second {
+  display: flex;
+  width: 100%;
+  left: 0px;
+  top: 1745px;
+}
+
+.home__content_codice {
+  background-color: chartreuse;
+}

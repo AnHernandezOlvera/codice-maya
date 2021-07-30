@@ -1,0 +1,58 @@
+.navbar{
+    position:sticky;
+    background-color: black;
+    align-content: center;
+    width: 100%;
+    height: 150px;
+    padding-top: 2em;
+}
+
+.logo__codice{
+    float: left;
+
+}
+
+
+.option__navbar{
+    display:flex;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none; 
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+
+
+}
+
+.option__navbar button {
+    color:blueviolet;
+    background-color: black;
+    border: none;
+    color: white;
+    text-transform:uppercase;
+  
+
+
+}
+
+
+.option__navbar_selector{
+ width: 5em;
+ height: 2em;
+ float:center;
+ background-color: black;
+ color: white;
+ border: none;
+
+}
