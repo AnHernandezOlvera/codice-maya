@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  height: 25em;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logos__mesa_trabajo {
+  width: 25%;
+  height: 30%;
+}
+.option__footer_button {
+  color: #000000;
+}
