@@ -1,15 +1,28 @@
 import React from 'react';
 import '../../styles/Navbar.css'
 import logo from '../../assets/logo-white.png';
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
+
 
 
 export const Navbar = () => {
   let history =useHistory();
+  let location = useLocation();
   function handlePath (path){
       history.push(path);
   }
-
+  const HandleLanguaje = () => {
+    switch (location.pathname) {
+        case '/' :
+            handlePath('/en');
+            break;
+        case '/Estudios' :
+            handlePath('/en/studies');
+            break;
+        default :
+        handlePath('/');
+    }
+}
     return (
         <div className = "navbar">
             <nav className= "option__navbar">
@@ -23,11 +36,10 @@ export const Navbar = () => {
                 <button onClick={()=>handlePath('Descarga')}>Descarga</button>
                 <button onClick={()=>handlePath('Creditos')}>Creditos</button>
 
-                <select id="orderSelect" className="option__navbar_selector">
-              <option value="english" >EN</option>
-              <option value="español" id="ascending">ESP</option>
-             
-            </select>
+                <select id="orderSelect" className="option__navbar_selector" onChange={()=>HandleLanguaje()}>
+                    <option value="es" >ES</option>
+                    <option value="en" id="ascending">EN</option>
+                </select>
 
 
 

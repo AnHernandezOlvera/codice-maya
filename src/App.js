@@ -7,9 +7,11 @@ import Descarga from "./components/Español/Descarga"
 import Creditos from "./components/Español/Creditos"
 import ProyectoEditorial from "./components/Español/ProyectoEditorial"
 
+import { EnHome } from "./components/en/EnHome";
 
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Studies } from './components/en/Studies';
 
 function App() {
   return (
@@ -43,6 +45,19 @@ function App() {
         <Route path="/ProyectoEditorial">
           <ProyectoEditorial/>
         </Route>
+
+        <Route exact path="/en">
+          <EnHome />
+        </Route>
+
+        <Route exact path="/en/presentation">
+          <EnHome />
+        </Route>
+
+        <Route exact path="/en/studies">
+          <Studies />
+        </Route>
+
 
 
       </Switch>
