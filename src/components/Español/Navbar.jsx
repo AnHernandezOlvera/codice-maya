@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Navbar.css'
-import logo from '../assets/logo-white.png';
+import '../../styles/Navbar.css'
+import logo from '../../assets/logo-white.png';
 import { useHistory } from "react-router-dom";
 
 
@@ -16,9 +16,10 @@ export const Navbar = () => {
                 <img className="logo__codice" onClick={()=>handlePath('/')} src={logo}  alt="Logo Codice Maya"/>
                
               
-                <button classname="option__navbar_button" onClick={()=>handlePath('AcercaDe')}>Acerca de</button>
-                <button onClick={()=>handlePath('Codice')}>Codice</button>
+                <button classname="option__navbar_button" onClick={()=>handlePath('Presentacion')}>Presentación</button>
+                <button onClick={()=>handlePath('Codice')}>Codice Maya de México</button>
                 <button onClick={()=>handlePath('Estudios')}>Estudios</button>
+                <button onClick={()=>handlePath('ProyectoEditorial')}>Proyecto Editorial</button>
                 <button onClick={()=>handlePath('Descarga')}>Descarga</button>
                 <button onClick={()=>handlePath('Creditos')}>Creditos</button>
 
