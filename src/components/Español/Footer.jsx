@@ -18,11 +18,11 @@ export const Footer = () => {
 
 
             <img className="logos__mesa_trabajo" src={logos} alt="Logos Mesa de Trabajo" />
-            <button classname="option__footer_button" onClick={() => handlePath('Presentacion')}>Presentación</button>
-            <button classname="option__footer_button" onClick={() => handlePath('Codice')}>Codice</button>
-            <button classname="option__footer_button" onClick={() => handlePath('Estudios')}>Estudios</button>
-            <button classname="option__footer_button" onClick={() => handlePath('Descarga')}>Descarga</button>
-            <button classname="option__footer_button" onClick={() => handlePath('Creditos')}>Creditos</button>
+            <button className="option__footer_button" onClick={() => handlePath('Presentacion')}>Presentación</button>
+            <button className="option__footer_button" onClick={() => handlePath('Codice')}>Codice</button>
+            <button className="option__footer_button" onClick={() => handlePath('Estudios')}>Estudios</button>
+            <button className="option__footer_button" onClick={() => handlePath('Descarga')}>Descarga</button>
+            <button className="option__footer_button" onClick={() => handlePath('Creditos')}>Creditos</button>
 
 
 

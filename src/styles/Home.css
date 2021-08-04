@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 .home__content {
   display: flex;
@@ -8,52 +9,41 @@
 .venusimg {
   width: 100%;
   position: relative;
-
 }
 
 .header__codice {
-    position: absolute;
-    height: 236px;
-left: 20.21%;
-right: 21.46%;
-top:65%;
-color: #F7F6F3;
+  position: relative;
+  color: #f7f6f3;
   font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: calc(7.5vw);
   text-align: center;
   text-transform: uppercase;
 }
 
 .header__almanaque {
-position: absolute;
-color: #F7F6F3;
-top: 95%;
-left: 20.21%;
-right: 21.46%;
-bottom: 1%;
+  position: relative;
+  color: #f7f6f3;
   font-family: Raleway, serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: calc(2.5vw);
   text-align: center;
   text-transform: uppercase;
 }
 
-
-.home__content_introtext{
-background-color: #000000;
-color: #ffffff;
-font-family: Cinzel;
-font-style: normal;
-font-weight: normal;
-font-size: 42px;
-line-height: 64px;
-text-align: center;
-text-transform: uppercase;
-
+.home__content_introtext {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(2vw);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 100px 20%;
 }
 
 .venusimg__second {
@@ -63,48 +53,47 @@ text-transform: uppercase;
   top: 1745px;
 }
 
-
 .home__content_codice {
-
-  display: flex;
   background-color: #000000;
   color: #ffffff;
   align-content: center;
 }
 
-.codiceimg{
-    width: 100%;
-    height: 100%;
-
-
+.codiceimg {
+  width: 100%;
+  height: 100%;
 }
 
-
-
-.home__content_codice_text{
- color: #F7F6F3;
- width: 50%;
- height: 50%;
- align-content:center;
-
+.home__content_codice_text {
+  background-color: #111111;
+  color: #f7f6f3;
+  height: 100vh;
+  align-content: center;
+  padding: 0 5%!important;
 }
 
-.home__content_estudios{
-  display:flex;
+.home__content_estudios {
+  height: 100vh;
+  align-content: center;
   align-items: center;
   background-color: #000000;
-  color: #F7F6F3;
+  color: #f7f6f3;
+  padding: 0 5%!important;
 }
 
-.home__content_estudios h1{
-  font-family: cinzel;
- color:#F7F6F3;
- font-size: 65px;
+.home__content_estudios h1 {
+  font-family: 'Cinzel', serif;
+  color: #f7f6f3;
+  font-size: 65px;
 }
 
-
-
-
-.home__content_editorial{
+.home__content_editorial {
   background-color: #000000;
+}
+.child{
+  width: 50%;
+}
+.button__ver_mas{
+  margin-left: calc(50% - 50px);
+  margin-top: 70px;
 }

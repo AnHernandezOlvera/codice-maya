@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 .App {
   text-align: center;
 }
-
-
+.section-parallax{
+  min-height: 100vh;
+  margin-top: 0;
+  
+}
+nav {
+  background-color: rgba(0, 0, 0, 0);
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.top-line::before{
+  content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    border-bottom: 1px solid #a7a5a5;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,0,0)
+}
+.title-section-left {
+  font-family: 'Cinzel', serif;
+  color: #f7f6f3;
+}
+.row{
+  margin-bottom: 0;
+}
+.box-text{
+  height: 100vh;
+}
