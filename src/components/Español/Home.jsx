@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Home.css";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
@@ -8,14 +8,22 @@ import venussecond from "../../assets/venus2.jpg";
 import codice from "../../assets/codice_02.png";
 import especialistas from "../../assets/expertos_Mesa de trabajo 1 copia 1.jpg";
 import M from "materialize-css";
+import { Modal } from "../Modal";
 
 export const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  }
+
   useEffect(() => {
     let element = document.querySelectorAll(".parallax");
     M.Parallax.init(element);
   });
   return (
     <div className="home">
+
       <Navbar />
       <div className="container-back">
         <div className="parallax-container section-parallax">
@@ -39,9 +47,13 @@ export const Home = () => {
           antiguo de américa.
         </p>
       </div>
+
       <div className="container-back">
         <div className="parallax-container section-parallax">
-          <div className="parallax flex-box">
+          <div className="parallax flex-box parallax-index">
+            <button className="btn-play waves-effect waves-light" onClick={openModal}><i class="medium material-icons">play_arrow</i></button>
+
+            <Modal showModal={showModal} setShowModal={setShowModal} />
             <img src={venussecond} alt="venus" />
           </div>
         </div>
