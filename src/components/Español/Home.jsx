@@ -11,10 +11,12 @@ import M from "materialize-css";
 import { Modal } from "../Modal";
 
 export const Home = () => {
+  
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
     setShowModal(prev => !prev);
+   
   }
 
   useEffect(() => {
@@ -52,7 +54,6 @@ export const Home = () => {
         <div className="parallax-container section-parallax">
           <div className="parallax flex-box parallax-index">
             <button className="btn-play waves-effect waves-light" onClick={openModal}><i class="medium material-icons">play_arrow</i></button>
-
             <Modal showModal={showModal} setShowModal={setShowModal} />
             <img src={venussecond} alt="venus" />
           </div>
